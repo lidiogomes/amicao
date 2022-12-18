@@ -1,0 +1,27 @@
+{
+  "name": "amicao",
+  "version": "1.0.0",
+  "description": "Aplicativo para quem gosta do seu cão.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lidiogomes/amicao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lidiogomes/amicao/issues"
+  },
+  "homepage": "https://github.com/lidiogomes/amicao#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
