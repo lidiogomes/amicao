@@ -1,7 +1,8 @@
-const express = require("express");
-require("dotenv/config");
+const express = require('express');
+require('dotenv/config');
 
 const app = express();
+app.use('view engine', 'ejs');
 
 
 app.listen(process.env.SERVER_PORT, () => {
