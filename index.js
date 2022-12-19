@@ -1,10 +1,15 @@
 const express = require('express');
-require('dotenv/config');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
-app.use('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
+//Routers
+app.use('/', require('./routes/login'));
 
-app.listen(process.env.SERVER_PORT, () => {
-    console.log(`Listen on port ${process.env.SERVER_PORT}`);
+const port = process.env.SERVER_PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server listen on port ${port}`);
 });
