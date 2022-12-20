@@ -1,10 +1,19 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+const connect = require('./databaseConnection');
 
+//Conifig do dotenv
 dotenv.config();
+//Conecta com o baco de dados
+connect();
 
 const app = express();
 app.set('view engine', 'ejs');
+
+//MiddleWare
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //Routers
 app.use('/', require('./routes/login'));
