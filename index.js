@@ -18,6 +18,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 //Routers
+app.get('/', (req, res) => {
+    res.render('./index')
+})
 app.use('/', require('./routes/login'));
 
 const PORT = process.env.SERVER_PORT || 3000;

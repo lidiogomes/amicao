@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--light);
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -25,6 +29,8 @@
     text-align: center;
     border: 1px solid var(--light);
     padding: 40px 20px;
+    background-color: #FFF;
+    /* box-shadow: 1px 1px 3px; */
 }
 
 .logo img {
@@ -43,7 +49,7 @@ input[type=password] {
     padding: 12px 20px;
     margin: 5px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -67,7 +73,7 @@ input[type=password]:focus {
 input[type=submit] {
     width: 100%;
     background-color: var(--primary);
-    color: #fff;
+    color: #FFF;
     padding: 14px 20px;
     margin: 20px 0;
     border: none;
