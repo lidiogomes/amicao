@@ -1,0 +1,97 @@
+:root {
+    --primary: #FF7913;
+    --light: #FFAC6C;
+    --light-medium: #FF9543;
+    --dark-medium: #CF5A00;
+    --dark: #A34700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid var(--light);
+    padding: 40px 20px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email]:hover,
+input[type=email]:active,
+input[type=email]:focus {
+    border: 1px solid var(--primary);
+    outline: none;
+    box-shadow: 1px 1px 3px;
+}
+
+input[type=password]:hover,
+input[type=password]:active,
+input[type=password]:focus {
+    border: 1px solid var(--primary);
+    outline: none;
+    box-shadow: 1px 1px 3px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px;
+}
+
+input[type=submit]:hover {
+    background-color: var(--dark-medium);
+}
+
+.register-link {
+    color: var(--primary);
+}
+
+.register-link:hover {
+    color: var(--dark-medium);
+}
+
+.register-link:visited {
+    color: var(--dark-medium);
+}
+
+.register-link:active {
+    color: var(--dark);
+}
