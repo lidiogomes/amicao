@@ -2,7 +2,7 @@
 
 //For Register Page
 const registerView = (req, res) => {
-    res.render("login/register", {
+    res.render("login/cadastro", {
     } );
 }
 

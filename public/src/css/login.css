@@ -30,7 +30,6 @@ body {
     border: 1px solid var(--light);
     padding: 40px 20px;
     background-color: #FFF;
-    /* box-shadow: 1px 1px 3px; */
 }
 
 .logo img {

@@ -1,0 +1,32 @@
+:root {
+    --primary: #FF7913;
+    --light: #FFAC6C;
+    --light-medium: #FF9543;
+    --dark-medium: #CF5A00;
+    --dark: #A34700;
+}
+
+body {
+    /* background-color: var(--light); */
+}
+
+
+header {
+    padding: 0 120px 30px 120px;
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgb(207 90 0 / 25%);
+  }
+
+.logo {
+    
+}
+
+.logo img {
+    width: 100%;
+    margin-top: 30px;
+}

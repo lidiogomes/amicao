@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="src/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="src/img/favicon-32x32.png" sizes="32x32">
+    <title>Home - Amigão</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="src/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/cadastro.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="text-center">
+            <div class="row justify-content-center">
+                <div class="col-4 justify-content-start">
+                    <h1 class="logo">
+                        <img src="src/img/logo.png" alt="Amicão" title="Amicão">
+                    </h1>
+                </div>
+                <h2>Cadastro</h2>
+            </div>
+        </header>
+        <section id="formCadastro">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Nome</label>
+                            <input type="text" class="form-control is-valid" id="userName" name="userName"
+                                placeholder="Nome completo" required>
+                            <div class="invalid-feedback">
+                                Campo obrigatório
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cellPhone" class="form-label">Celular</label>
+                            <input type="tel" class="form-control is-invalid" id="cellPhone" name="cellPhone"
+                                placeholder="(81) 99999-9999" required>
+                            <div class="invalid-feedback">
+                                Campo obrigatório
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="cellPhone" name="cellPhone"
+                                placeholder="exemplo@email.com" required>
+                            <div class="invalid-feedback">
+                                Campo obrigatório
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                            <div class="invalid-feedback">
+                                Campo obrigatório
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirmação de senha</label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                            <div class="invalid-feedback">
+                                Campo obrigatório
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="submit">Criar usuário</button>
+                        </div>
+                    </form>
+                    <footer class="text-center mt-4">
+                        <a href="#">Já possui cadastro? Clique aqui</a>
+                        <p class="mt-3">Ao clicar em "Criar usuário", você concorda com <br> <a href="#">Termos de Uso</a> e <a
+                                href="#">Política de Privacidade</a></p>
+
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="src/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+        // (function () {
+        //     'use strict'
+
+        //     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        //     var forms = document.querySelectorAll('.needs-validation')
+
+        //     // Loop over them and prevent submission
+        //     Array.prototype.slice.call(forms)
+        //         .forEach(function (form) {
+        //             form.addEventListener('submit', function (event) {
+        //                 if (!form.checkValidity()) {
+        //                     event.preventDefault()
+        //                     event.stopPropagation()
+        //                 }
+                        
+        //                 form.classList.add('was-validated')
+        //             }, false)
+        //         })
+        // })()
+    </script>
+</body>
+
+</html>
